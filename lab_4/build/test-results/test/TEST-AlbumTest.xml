@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlbumTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-11-23T15:57:28" hostname="FEVER" time="0.011">
+  <properties/>
+  <testcase name="testInvalidTitle" classname="AlbumTest" time="0.011">
+    <failure message="org.testng.TestException: &#10;The exception was thrown with the wrong message: expected &quot;.*Title can consist only of letters.*&quot; but got &quot;Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.&quot;" type="org.testng.TestException">org.testng.TestException: 
+The exception was thrown with the wrong message: expected &quot;.*Title can consist only of letters.*&quot; but got &quot;Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.&quot;
+	at app//org.testng.internal.invokers.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:69)
+	at app//org.testng.internal.invokers.TestInvoker.considerExceptions(TestInvoker.java:850)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:718)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@17.0.9/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at app//org.testng.TestRunner.run(TestRunner.java:621)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1114)
+	at app//org.testng.TestNG.run(TestNG.java:1082)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:145)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:92)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+	at app//jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291)
+	at app//jakarta.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at app//org.example.AlbumBuilder.build(AlbumBuilder.java:42)
+	at app//AlbumTest.testInvalidTitle(AlbumTest.java:12)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	... 40 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
